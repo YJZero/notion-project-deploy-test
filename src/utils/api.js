@@ -1,8 +1,10 @@
 // import { API_END_POINT } from "../../apiUrl.js";
 
+const process = window.process;
+const API_END_POINT = process.env.API_END_POINT;
 export const request = async (url, options = {}) => {
   try {
-    const res = await fetch(`${process.env.API_END_POINT}${url}`, {
+    const res = await fetch(`${API_END_POINT}${url}`, {
       ...options,
       headers: {
         "x-username": "yjZero",
