@@ -1,3 +1,5 @@
+// import { API_END_POINT } from "../../apiUrl.js";
+
 export const request = async (url, options = {}) => {
   try {
     const res = await fetch(`${process.env.API_END_POINT}${url}`, {
